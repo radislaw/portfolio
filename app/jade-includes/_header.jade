@@ -1,4 +1,7 @@
-header
+- var sicialLink = ["vk.com/radislaw22","twitter.com","facebook.com","github.com"]
+header.main-haeder
     .wrapper-big
-        .logo
-        .social
+        img.site-logo(src="img/logo.png", alt="Logo")
+        ul.social
+            each item in sicialLink
+                li.social__btn:  a(href= "https://#{item}") #{item}
