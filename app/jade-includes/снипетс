@@ -1,8 +1,0 @@
-li.social-btn.vk
-                a(href="https://vk.com/radislaw22") VK
-            li.social-btn.tw
-                a(href="https://twitter.com") Twitter
-            li.social-btn.fb
-                a(href="https://facebook.com") Facebook
-            li.social-btn.gh
-                a(href="https://github.com") Github
