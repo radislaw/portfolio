@@ -1,0 +1,15 @@
+body{
+    background-image: url(/img/background.jpg);
+}
+.claerfix:before,
+.claerfix:after {
+   content: "";
+   display: table;
+}
+.claerfix:after {
+   clear: both;
+}
+.main-header
+    height: 119px;
+    background-color:red;
+}
