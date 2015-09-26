@@ -23,17 +23,95 @@
   <script src="bower/modernizr.js"></script>
 </head>
 <body>
+  <!--[if lt IE 8]>
+  <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+  <![endif]-->
   <header class="main-header clearfix">
-    <div class="wrapper-big"><img src="img/logo.png" alt="Logo" class="site-logo"/>
-      <ul class="social">
-        <li class="social__btn"><a href="https://vk.com/radislaw22">vk.com/radislaw22</a></li>
-        <li class="social__btn"><a href="https://twitter.com">twitter.com</a></li>
-        <li class="social__btn"><a href="https://facebook.com">facebook.com</a></li>
-        <li class="social__btn"><a href="https://github.com">github.com</a></li>
+    <div class="wrapper-big"><a href="index.html" class="site-logo"><img src="img/logo.png" alt="Logo"/></a>
+      <ul class="socials">
+        <li class="social-item"><a href="https://vk.com/radislaw22" target="_blank" class="social-link vk">vk.com/radislaw22</a></li>
+        <li class="social-item"><a href="https://twitter.com" target="_blank" class="social-link tw">twitter.com</a></li>
+        <li class="social-item"><a href="https://facebook.com" target="_blank" class="social-link fb">facebook.com</a></li>
+        <li class="social-item"><a href="https://github.com" target="_blank" class="social-link gh">github.com</a></li>
       </ul>
     </div>
   </header>
-  <main></main>
+  <main class="wrapper clearfix">
+    <!-- Sidebar-->
+    <aside class="sidebar">
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav__list">
+          <li class="sidebar__nav__list__item curent"><a href="/" class="sidebar__nav__list__item-link">Обо мне</a></li>
+          <li class="sidebar__nav__list__item"><a href="/my-work" class="sidebar__nav__list__item-link">Мои работы</a></li>
+          <li class="sidebar__nav__list__item"><a href="/touch" class="sidebar__nav__list__item-link">Связаться со мной</a></li>
+        </ul>
+      </nav>
+      <address class="contacts">
+        <h2 class="contacts__header"><span class="contacts__header__text">Контакты</span></h2>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item-mail"><a href="mailto:radislaw22@gmail.com" class="contacts__link"><span class="contacts__link__text">radislaw22@gmail.com</span></a></li>
+          <li class="contacts__item contacts__item-phone"><a href="tel:+79025212499" class="contacts__link"><span class="contacts__link__text">+7(902)521-24-99</span></a></li>
+          <li class="contacts__item contacts__item-skype"><a href="skype:radislaw22@gmail.com" class="contacts__link"><span class="contacts__link__text">Радислав Ялилов</span></a></li>
+        </ul>
+      </address>
+    </aside>
+    <section class="variable-block">
+      <article class="variable__block__info">
+        <h2 class="info__header">Основная информация</h2>
+        <div class="info__body clearfix">
+          <div class="image-wrap">
+            <div class="avatar-box"><img src="img/avatar.png" alt="MyAvatar" class="avatar"/></div>
+          </div>
+          <div class="worksheet-wrap">
+            <ul class="worksheet__list">
+              <li class="worksheet__item clearfix">
+                <div class="worksheet-what">Меня зовут:</div>
+                <div class="worksheet-info">Радислав Ялилов</div>
+              </li>
+              <li class="worksheet__item clearfix">
+                <div class="worksheet-what">Мой возраст:</div>
+                <div class="worksheet-info">32 года</div>
+              </li>
+              <li class="worksheet__item clearfix">
+                <div class="worksheet-what">Мой город:</div>
+                <div class="worksheet-info">Артем, Россия</div>
+              </li>
+              <li class="worksheet__item clearfix">
+                <div class="worksheet-what">Моя специализация:</div>
+                <div class="worksheet-info">FRONTEND разработчик</div>
+              </li>
+              <li class="worksheet__item clearfix">
+                <div class="worksheet-what">Ключевые навыки:</div>
+                <div class="worksheet-info skills">
+                  <ul class="skills-list">
+                    <li class="skill-item">html</li>
+                    <li class="skill-item">css</li>
+                    <li class="skill-item">javascript</li>
+                    <li class="skill-item">gulp</li>
+                    <li class="skill-item">git</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="variable__block__info">
+        <h2 class="info__header">Опыт работы</h2>
+      </article>
+      <article class="variable__block__info">
+        <h2 class="info__header">Образование</h2>
+      </article>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="wrapper">
+      <div class="lock"><a class="lock-inner"></a></div>
+      <div class="copyright">&copy;2015. Это сайт Радислава Ялилова, пожалуйста не копируйте и не воруйте его</div>
+    </div>
+  </footer>
+  <!-- vendor js-->
   <script src="bower/jquery/jquery.js"></script>
+  <!-- custom js-->
   <script src="js/main.js"></script>
 </body>

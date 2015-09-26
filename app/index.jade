@@ -22,10 +22,15 @@ head
     // header js
     script(src="bower/modernizr.js")
 body
+    <!--[if lt IE 8]>
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+    <![endif]-->
     include jade-includes/_header.jade
-    main
+    main.wrapper.clearfix
         include jade-includes/_aside.jade
         include jade-includes/_info-block.jade
     include jade-includes/_footer.jade
+    // vendor js
     script(src="bower/jquery/jquery.js")
+    // custom js
     script(src="js/main.js")

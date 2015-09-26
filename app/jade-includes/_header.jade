@@ -1,7 +1,18 @@
-- var sicialLink = ["vk.com/radislaw22","twitter.com","facebook.com","github.com"]
+- var socialLink = ["vk.com/radislaw22","twitter.com","facebook.com","github.com"]
+- var socialName = ["vk","tw","fb","gh"]
 header.main-header.clearfix
     .wrapper-big
-        img.site-logo(src="img/logo.png", alt="Logo")
-        ul.social
-            each item in sicialLink
-                li.social__btn:  a(href= "https://#{item}") #{item}
+        a.site-logo(href="index.html")
+            img(src="img/logo.png", alt="Logo")
+        ul.socials
+            li.social-item
+                a.social-link.vk(href="https://vk.com/radislaw22" target="_blank") vk.com/radislaw22
+            li.social-item
+                a.social-link.tw(href="https://twitter.com" target="_blank") twitter.com
+            li.social-item
+                a.social-link.fb(href="https://facebook.com" target="_blank") facebook.com
+            li.social-item
+                a.social-link.gh(href="https://github.com" target="_blank") github.com
+            //-
+                each item in socialLink
+                li.social-item:  a.social-link(href= "https://#{item}" target="_blank") #{item}
