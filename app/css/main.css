@@ -1,15 +1,30 @@
+html, body{
+    width: 100%;
+}
 body{
     background-image: url(/img/background.jpg);
 }
-.claerfix:before,
-.claerfix:after {
+img{
+    max-width: 100%;
+}
+.clearfix:before,
+.clearfix:after {
    content: "";
    display: table;
 }
-.claerfix:after {
+.clearfix:after {
    clear: both;
 }
-.main-header
-    height: 119px;
-    background-color:red;
+.wrapper-big{
+    width: 85.714286%;
+    margin: 0 auto;
+}
+.main-header{
+    background:#eff3f7 url(/img/gradient-border.png) no-repeat bottom;
+}
+.site-logo{
+    float: left;
+}
+.social{
+    float: right;
 }
