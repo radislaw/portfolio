@@ -7,7 +7,7 @@ body{
     height: 100%;
     display: table; /* FOR STICKY FOOTER */
     background: url(/img/comppattern.png) repeat;
-    font: normal 100% 'fira_sanslight', sans-serif;
+    font: normal 100% 'fira_sansbook', sans-serif;
     color: #4a545d;
 }
 img{
@@ -91,19 +91,19 @@ img{
 /* ASIDE */
 .sidebar{
     float: left;
+    width: 250px;
 }
 
+/* NAVIGATION */
 .sidebar__nav__list{
-    width: 250px;
     min-height: 220px;
     list-style-type: none;
     margin: 0;
+    margin-bottom: 26px;
     padding: 0;
     background-color: #eff3f7;
     border-radius: 4px;
-}
-.sidebar__nav__item{
-
+    overflow: hidden;
 }
 .sidebar__nav-link{
     display: block;
@@ -112,8 +112,9 @@ img{
     color: #959aa8;
     font-size: 21px;
     text-decoration: none;
-    border-bottom: 2px solid #3ba8c0;
+    border-top: 2px solid #3ba8c0;
     margin: 0 10px;
+    margin-bottom: -2px;
 }
 .sidebar__nav__item-curent{
     background-color: #3ba8c0;
@@ -123,19 +124,50 @@ img{
     font-size: 23px;
     padding-bottom: 16px;
 }
-.sidebar__nav__item:first-child {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-.sidebar__nav__item:first-child a,
-.sidebar__nav__item:last-child a{
-    border-bottom: none;
+.sidebar__nav__item:first-child a{
+    border-top: none;
 }
 .sidebar__nav-link:hover{
     color: #3ba8c0;
 }
 .sidebar__nav__item-curent a:hover{
     color:white;
+}
+
+/* CONTACTS */
+.contacts{
+    min-height: 160px;
+    border-radius: 4px;
+    color:white;
+    background-color: #3ba8c0;
+    overflow: hidden;
+}
+.contacts__header{
+    font: 21px 'fira_sansbook', sans-serif;
+
+}
+.contacts__list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.contacts__item-mail{
+    background-color: #41b9d4;
+}
+.contacts__item-phone{
+    background-color: #48cbe8;
+}
+.contacts__item-skype{
+    background-color: #51daf8;
+}
+.contacts__link{
+    display: block;
+    text-decoration: none;
+    padding: 21px 0 17px 17px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 /* VARIABLE */
