@@ -152,43 +152,24 @@ img{
     margin: 0;
     padding: 0;
 }
-.contacts__link-mail{
-    background-color: #41b9d4;
-}
-.contacts__link-phone{
-    background-color: #48cbe8;
-}
-.contacts__link-skype{
-    background-color: #51daf8;
-}
-
-.contacts__link:before{
-    content: 'k';
-    background-image: url(../img/avatar.png);
-    width: 210px;
-    height: 16px;
-    border:1px solid red;
-    margin-right: 27px;
-    margin-left: 43px;
-}
-.contacts__link-mail:before{
-    background-position:0 0;
-}
-.contacts__link-phone:before{
-    background-position: 0 20px;
-}
-.contacts__link-skype:before{
-    background-position:0 -40px;
-}
 .contacts__link{
     display: block;
     text-decoration: none;
-    padding: 8px 0 5px 0;
+    padding: 8px 0 8px 83px;
     color: #fff;
-    font: normal 17px 'fira_sansbook', sans-serif;
+    font: normal 15px 'fira_sansbook', sans-serif;
 }
 .contacts__link:hover{
     text-decoration: underline;
+}
+.contacts__item-mail{
+    background: #41b9d4 url(../img/post.png) 42px center no-repeat;
+}
+.contacts__link-phone{
+    background: #48cbe8 url(../img/tel.png) 42px center no-repeat;
+}
+.contacts__link-skype{
+    background: #51daf8 url(../img/skype.png) 42px center no-repeat;
 }
 
 
