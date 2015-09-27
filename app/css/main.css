@@ -108,7 +108,7 @@ img{
 .sidebar__nav-link{
     display: block;
     text-decoration: none;
-    padding: 21px 0 17px 17px;
+    padding: 21px 0 19px 17px;
     color: #959aa8;
     font-size: 21px;
     text-decoration: none;
@@ -177,6 +177,7 @@ img{
 .variable-block{
     float: right;
     width: 650px;
+    margin-bottom: 12px;
 }
 .variable__block__info{
     background: #eff3f7;
@@ -189,7 +190,7 @@ img{
     font-weight: normal;
     color: #3ba8c0;
     border-bottom: 2px solid #3ba8c0;
-    margin: 0 0 18px 0;
+    margin: 0 0 21px 0;
     padding: 13px 21px;
     display: inline-block;
 }
@@ -198,8 +199,8 @@ img{
 }
 .image-wrap{
     float: left;
-    margin-left: 55px;
-    margin-top: 15px;
+    margin-left: 54px;
+    margin-top: 11px;
 }
 .avatar-box{
     width: 142px;
@@ -263,7 +264,22 @@ img{
 .about-box__list{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 50px;
+    margin-bottom: -15px;
+}
+.about-box__item{
+    padding-left: 76px;
+    margin-left: 0px;
+    margin-bottom: 19px;
+}
+.icon-work{
+    background: url(../img/bag.png) 9px center no-repeat;
+}
+.icon-hat{
+    background: url(../img/hat.png) 6px center no-repeat;
+}
+.icon-page{
+    background: url(../img/course.png) 15px center no-repeat;
 }
 .period{
     font-family: 'fira_sanslight';
@@ -284,6 +300,33 @@ img{
 .page-footer{
     background: #eff3f7 url(/img/gradient-border.png) no-repeat top center;
     background-size: 100%;
-    width: 100%;
     color: #4a545d;
+}
+.container{
+    padding-top: 23px;
+    padding-bottom: 23px;
+    position: relative;
+}
+.copyright{
+    margin: 0 180px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 13px;
+}
+.lock{
+    position: absolute;
+    top: 26px;
+    left: 30px;
+}
+.lock-inner{
+    display: block;
+    height: 40px;
+    line-height: 2.2;
+    text-decoration: none;
+    background: url(../img/lock.png) no-repeat;
+    padding-left: 24px;
+}
+.lock-inner:hover{
+    text-decoration: underline;
+    background: url(../img/unlock.png) no-repeat;
 }
