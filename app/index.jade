@@ -15,8 +15,8 @@ head
     // vendor CSS
     link(rel="stylesheet", href="bower/normalize-css/normalize.css")
     // fonts CSS
-    link(rel="stylesheet", href="fonts/fira.css")
-    link(rel="stylesheet", href="fonts/proximanovacond-simibold.css")
+    link(rel="stylesheet", href="/fonts/fira/fira.css")
+    link(rel="stylesheet", href="/fonts/Proxima-Nova/proximanovacond-simibold.css")
     // custom CSS
     link(rel="stylesheet", href="../css/main.css")
     // header js
@@ -26,11 +26,12 @@ body
     <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
     <![endif]-->
     include jade-includes/_header.jade
-    main.wrapper.clearfix
-        include jade-includes/_aside.jade
-        include jade-includes/_info-block.jade
+    main.page-row.page-row-expanded.clearfix
+        .wrapper
+            include jade-includes/_aside.jade
+            include jade-includes/_info-block.jade
     include jade-includes/_footer.jade
-    // vendor js
-    script(src="bower/jquery/jquery.js")
-    // custom js
-    script(src="js/main.js")
+        // vendor js
+        script(src="bower/jquery/jquery.js")
+        // custom js
+        script(src="js/main.js")
