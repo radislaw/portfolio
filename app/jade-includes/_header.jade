@@ -1,18 +1,19 @@
 - var socialLink = ["vk.com/radislaw22","twitter.com","facebook.com","github.com"]
 - var socialName = ["vk","tw","fb","gh"]
-header.main-header.page-row.clearfix
-    .wrapper-big
-        a.site-logo(href="index.html")
-            img(src="img/logo.png", alt="Logo")
-        ul.header-social-icons-list
-            li.header-social-icon-item
-                a.header-social-icon-link.header-social-icon-link-vk(href="https://vk.com/radislaw22" target="_blank") vk.com/radislaw22
-            li.header-social-icon-item
-                a.header-social-icon-link.header-social-icon-link-tw(href="https://twitter.com" target="_blank") twitter.com
-            li.header-social-icon-item
-                a.header-social-icon-link.header-social-icon-link-fb(href="https://facebook.com" target="_blank") facebook.com
-            li.header-social-icon-item
-                a.header-social-icon-link.header-social-icon-link-gh(href="https://github.com" target="_blank") github.com
+.page-row
+    header.main-header.clearfix
+        .wrapper-big
+            a.site-logo(href="index.html")
+                img(src="img/logo.png", alt="Logo")
+            ul.header-social-icons-list
+                li.header-social-icon-item
+                    a.header-social-icon-link.header-social-icon-link-vk(href="https://vk.com/radislaw22" target="_blank") vk.com/radislaw22
+                li.header-social-icon-item
+                    a.header-social-icon-link.header-social-icon-link-tw(href="https://twitter.com" target="_blank") twitter.com
+                li.header-social-icon-item
+                    a.header-social-icon-link.header-social-icon-link-fb(href="https://facebook.com" target="_blank") facebook.com
+                li.header-social-icon-item
+                    a.header-social-icon-link.header-social-icon-link-gh(href="https://github.com" target="_blank") github.com
             //-
                 each item in socialLink
                 li.social-item:  a.social-link(href= "https://#{item}" target="_blank") #{item}
