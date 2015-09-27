@@ -3,7 +3,7 @@ html, body{
     height: 100%;
 }
 body{
-    display: table;
+    display: table; /* FOR STICKY FOOTER */
     background: url(/img/comppattern.png) repeat;
     font: normal 1em 'fira_sanslight', sans-serif;
     color: #4a545d;
@@ -11,13 +11,7 @@ body{
 img{
     max-width: 100%;
 }
-.page-row{
-    display: table-row;
-    height: 1px;
-}
-.page-row-expanded{
-    height: 100%;
-}
+
 .clearfix:before,
 .clearfix:after {
    content: "";
@@ -36,17 +30,68 @@ img{
 }
 .main-header{
     background:#eff3f7 url(/img/gradient-border.png) no-repeat bottom center;
+    background-size: 100%;
 }
 .site-logo{
     float: left;
 }
-.socials{
+
+/* SOCIAL ICONS */
+.header-social-icons-list{
     float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header-social-icon-item{
+    float: left;
+    margin-left: 24px;
+}
+.header-social-icon-link{
+    display: block;
+    width: 47px;
+    height: 47px;
+    text-decoration: none;
+    background: url(/img/social.png) no-repeat;
+    text-indent: -9999px;
+}
+.header-social-icon-link-vk{
+    background-position: 0 0;
+}
+.header-social-icon-link-vk:hover{
+    background-position: 0 -48px;
+}
+.header-social-icon-link-tw{
+    background-position: -48px 0;
+}
+.header-social-icon-link-tw:hover{
+    background-position: -48px -48px;
+}
+.header-social-icon-link-fb{
+    background-position: -97px 0;
+}
+.header-social-icon-link-fb:hover{
+    background-position: -97px -48px;
+}
+.header-social-icon-link-gh{
+    background-position: -146px 0;
+}
+.header-social-icon-link-gh:hover{
+    background-position: -146px -48px;
 }
 
-/* footer */
+/* STIKY FOOTER STYLES */
+.page-row{
+    display: table-row;
+    height: 1px;
+}
+.page-row-expanded{
+    height: 100%;
+}
 
+/* FOOTER */
 .page-footer{
     background: #eff3f7 url(/img/gradient-border.png) no-repeat top center;
+    background-size: 100%;
     width: 100%;
 }
