@@ -6,7 +6,7 @@ body{
     width: 100%;
     height: 100%;
     display: table; /* FOR STICKY FOOTER */
-    background: url(/img/comppattern.png) repeat;
+    background: url(../img/comppattern.png) repeat;
     font: normal 100% 'fira_sansbook', sans-serif;
     color: #4a545d;
 }
@@ -33,7 +33,7 @@ img{
 
 /* HEADER */
 .main-header{
-    background:#eff3f7 url(/img/gradient-border.png) no-repeat bottom center;
+    background:#eff3f7 url(../img/gradient-border.png) no-repeat bottom center;
     background-size: 100%;
     padding: 39px 0 30px 0;
     margin-bottom: 39px;
@@ -60,7 +60,7 @@ img{
     width: 47px;
     height: 47px;
     text-decoration: none;
-    background: url(/img/social.png) no-repeat;
+    background: url(../img/social.png) no-repeat;
     text-indent: -9999px;
 }
 .header-social-icon-link-vk{
@@ -242,22 +242,25 @@ img{
     float: left;
     margin-left: 17px;
 }
-.skills-list{
+
+/* SKILS */
+.skils-list{
     width: 224px;
-    padding: 5px;
+    padding: 3px;
     list-style-type: none;
 }
 .skill-item{
     display: inline-block;
-    font-family: 'ProximaNovaCondesedSemibold';
+    font-family: 'proxima_nova_condensedSBd';
     background: #3ba8c0;
   border-radius: 2px;
   background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-    padding: 2px 4px;
-    margin-right: 6px;
+    padding: 2px 6px;
+    margin-right: 4px;
+    margin-bottom: 7px;
     color: #fff;
-    line-height: 1.2;
+    line-height: 1.1;
     min-width: 40px;
     text-align: center;
 }
@@ -329,4 +332,23 @@ img{
 .lock-inner:hover{
     text-decoration: underline;
     background: url(../img/unlock.png) no-repeat;
+}
+
+/* 1356px */
+@media only screen and (max-width:1356px) {
+
+	.variable-block {
+		width: 600px;
+	}
+    .worksheet-wrap {
+		width:  380px;
+	}
+    .skills-list {
+	padding: 3px;
+	width: 200px;
+}
+    .image-wrap {
+	margin-left: 20px;
+}
+
 }
