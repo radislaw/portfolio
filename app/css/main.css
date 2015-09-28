@@ -3,7 +3,7 @@ html{
     height: 100%;
 }
 body{
-    width: 1400px;
+    width: 100%;
     height: 100%;
     display: table; /* FOR STICKY FOOTER */
     background: url(/img/comppattern.png) repeat;
@@ -23,11 +23,11 @@ img{
    clear: both;
 }
 .wrapper-big{
-    width: 1200px;
+    width: 85.714286%;
     margin: 0 auto;
 }
 .wrapper{
-    width: 960px;
+    width: 68.571429%;
     margin: 0 auto;
 }
 
