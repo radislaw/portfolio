@@ -1,19 +1,19 @@
 var gulp = require("gulp"),
-    jade = require("gulp-jade"),
+//    jade = require("gulp-jade"),
     prettify = require("gulp-prettify"),
     browserSinc = require('browser-sync'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant');
 
-gulp.task('jade', function() {
+/*gulp.task('jade', function() {
   gulp.src('app/*.jade')
     .pipe(jade())
     .on('error', log)
     .pipe(prettify({indent_size: 4}))
     .pipe(gulp.dest('app/'))
-});
+});*/
 
-gulp.task('server', ['jade'], function () {
+gulp.task('server'/*, ['jade']*/, function () {
     browserSinc({
         port:9000,
         server:{
@@ -28,7 +28,7 @@ gulp.task('watch', function(){
         'app/js/**/*.js',
         'app/css/**/*.css',
     ]).on('change', browserSinc.reload);
-    gulp.watch('app/*.jade', ['jade']);
+//    gulp.watch('app/*.jade', ['jade']);
     gulp.watch('images/*', ['images']);
 });
 
@@ -42,7 +42,7 @@ gulp.task('images', function () {
         .pipe(gulp.dest('app/img'));
 });
 
-gulp.task('default',['images', 'server', 'jade', 'watch']);
+gulp.task('default',['images', 'server', /*'jade',*/ 'watch']);
 
 
 
