@@ -4,7 +4,7 @@ head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    title Portfolio. Main page
+    title Portfolio. My works
     // SEO
     meta(name="description" content="Portfolio")
     meta(name="keywords" content="")
@@ -20,6 +20,7 @@ head
     // custom CSS
     link(rel="stylesheet", href="css/main.css")
     // header js
+    script(src="app/bower/modernizr/src/Modernizr.js")
     script(src="js/html5shiv.js")
 body
     <!--[if lt IE 8]>
@@ -29,7 +30,6 @@ body
     main.page-row.page-row-expanded.clearfix
         .wrapper
             include jade-includes/_aside.jade
-            include jade-includes/_info-block.jade
     include jade-includes/_footer.jade
         // vendor js
         script(src="bower/jquery/jquery.js")
