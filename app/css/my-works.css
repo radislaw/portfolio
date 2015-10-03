@@ -1,0 +1,41 @@
+.variable__block__info{
+    min-height: 842px;
+}
+.preview-wrap{
+    float: left;
+    width: 182px;
+    margin: 0;
+    margin-left: 30px;
+}
+.preview-wrap:first-child{
+    margin: 0;
+}
+.preview__body{
+    margin: 0 20px;
+}
+.hover{
+    display: none;
+}
+.hover:hover{
+    display: block;
+    width: 182px;
+    height: 129px;
+    background-color: rgba(1, 108, 164, 0.749);
+}
+.peview-img {
+    border: 2px solid rgb(59, 168, 192);
+    border-radius: 7px;
+}
+.figcaption{
+    text-align: center;
+}
+.site-name{
+    color: #3ba8c0;
+    font-family: 'firasans-lightitalic', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+.project-info{
+    font-family: 'firasans-light', sans-serif;
+    font-size: 15px;
+}

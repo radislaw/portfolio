@@ -19,8 +19,8 @@ head
     link(rel="stylesheet", href="fonts/Proxima-Nova/proximanovacond-semibold.css")
     // custom CSS
     link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/my-works.css")
     // header js
-    script(src="app/bower/modernizr/src/Modernizr.js")
     script(src="js/html5shiv.js")
 body
     <!--[if lt IE 8]>
@@ -29,7 +29,8 @@ body
     include jade-includes/_header.jade
     main.page-row.page-row-expanded.clearfix
         .wrapper
-            include jade-includes/_aside.jade
+            include jade-includes/_my-works-aside.jade
+            include jade-includes/_my-works-info.jade
     include jade-includes/_footer.jade
         // vendor js
         script(src="bower/jquery/jquery.js")
