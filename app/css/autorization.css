@@ -25,22 +25,10 @@
     margin-bottom: 14px;
 }
 .autorization-label{
+    display: block;
     font-size: 36px;
     color: #959aa8;
     font-family:'firasans-light', sans-serif;
-}
-.autorization-submit{
-    color: #fff;
-    background-color: #48cbe8;
-    border-radius: 8px;
-    width: 226px;
-    height: 54px;
-    border: none;
-    border-bottom: 4px solid #3ba8c0;
-    font-size: 36px;
-    line-height: 50px;
-    margin: 0 auto;
-    margin-top: 24px;
 }
 .autorization-input{
     width: 424px;
@@ -76,4 +64,17 @@
 .autorization-input::-webkit-input-placeholder{
     text-overflow: ellipsis;
     color: #48cbe8;
+}
+.autorization-submit{
+    color: #fff;
+    background-color: #48cbe8;
+    border-radius: 8px;
+    width: 226px;
+    height: 54px;
+    border: none;
+    border-bottom: 4px solid #3ba8c0;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 24px;
 }

@@ -1,0 +1,19 @@
+section.variable-block
+    .touch-form
+        .touch-form-title У вас интересный проект? Напишите мне
+        .touch-form-wrap
+            form.autorization-form(action="#")
+                label.touch-label Имя
+                    input.touch-input(type="text" id="login-field" placeholder="Как к Вам обращаться")
+                label.touch-label Email
+                    input.touch-input(type="email" id="mail-field" placeholder="Куда мне писать")
+                label.touch-label Сообщение
+                    textarea.touch-message(name="message-field", cols="10", rows="10", placeholder="Кратко в чем суть")
+                label.touch-label.touch-capcha-label Введите код, указанный на картинке
+                    .capcha-wrap
+                        .capcha
+                            img(src="img/capcha.png", alt="capcha")
+                        input.capcha-input(type="text" id="capcha-field" placeholder="Введите код")
+                input.touch-submit(type="submit" value="Отправить")
+                input.touch-reset(type="reset" value="Очистить")
+
