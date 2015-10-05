@@ -1,0 +1,79 @@
+.autorization {
+    width: 590px;
+    height: 484px;
+    margin: 150px auto;
+    color: white;
+    background-color: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+    text-align: center;
+}
+.autorization-form{
+    padding: 0 30px;
+}
+.autorization-title{
+    margin: 0;
+    height: 107px;
+    font-size: 40px;
+    font-family: 'fira_sansbook', sans-serif;
+    font-variant: normal;
+    background-color: #48cbe8;
+    border-bottom: 15px solid #67dffa;
+    text-align: center;
+    line-height: 92px;
+    margin-bottom: 14px;
+}
+.autorization-label{
+    font-size: 36px;
+    color: #959aa8;
+    font-family:'firasans-light', sans-serif;
+}
+.autorization-submit{
+    color: #fff;
+    background-color: #48cbe8;
+    border-radius: 8px;
+    width: 226px;
+    height: 54px;
+    border: none;
+    border-bottom: 4px solid #3ba8c0;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.autorization-input{
+    width: 424px;
+    height: 62px;
+    background-color: #fff;
+    border: 1px solid rgb(72, 203, 232);
+    border-radius: 4px;
+    font-family:'firasans-light', sans-serif;
+    font-size: 17px;
+    padding: 18px;
+    margin-bottom: 10px;
+}
+
+.autorization-input[placeholder] {
+    text-overflow: ellipsis;
+    color: #48cbe8;
+}
+
+.autorization-input::-moz-placeholder {
+    text-overflow: ellipsis;
+    color: #48cbe8;
+}
+
+.autorization-input:-moz-placeholder {
+    text-overflow: ellipsis;
+    color: #48cbe8;
+}
+
+.autorization-input:-ms-input-placeholder {
+    text-overflow: ellipsis;
+    color: #48cbe8;
+}
+.autorization-input::-webkit-input-placeholder{
+    text-overflow: ellipsis;
+    color: #48cbe8;
+}

@@ -19,6 +19,7 @@ head
     link(rel="stylesheet", href="fonts/Proxima-Nova/proximanovacond-semibold.css")
     // custom CSS
     link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/autorization.css")
     // header js
     script(src="js/html5shiv.js")
 body
@@ -26,7 +27,7 @@ body
     <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
     <![endif]-->
     main.page-row.page-row-expanded.clearfix
-        .wrapper
+        include jade-includes/_autorization-form.jade
     include jade-includes/_footer.jade
         // vendor js
         script(src="bower/jquery/jquery.js")
