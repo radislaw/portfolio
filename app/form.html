@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="fonts/Proxima-Nova/proximanovacond-semibold.css"/>
   <!-- custom CSS-->
   <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/autorization.css"/>
   <!-- header js-->
   <script src="js/html5shiv.js"></script>
 </head>
@@ -27,12 +28,23 @@
   <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
   <![endif]-->
   <main class="page-row page-row-expanded clearfix">
-    <div class="wrapper"></div>
+    <div class="autorization">
+      <h1 class="autorization-title">Авторизируйтесь</h1>
+      <form action="#" class="autorization-form">
+        <label class="autorization-label">Логин
+          <input type="text" id="logun-field" placeholder="Введите логин" class="autorization-input"/>
+        </label>
+        <label class="autorization-label">Пароль
+          <input type="password" id="password-field" placeholder="Введите пароль" class="autorization-input"/>
+          <input type="submit" value="Войти" class="autorization-submit"/>
+        </label>
+      </form>
+    </div>
   </main>
   <div class="page-row">
     <footer class="page-footer">
       <div class="wrapper container">
-        <div class="lock"><a href="/form.html" class="lock-inner"></a></div>
+        <div class="lock"><a href="form.html" class="lock-inner"></a></div>
         <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста не копируйте и не воруйте его
           <!-- vendor js-->
           <script src="bower/jquery/jquery.js"></script>
