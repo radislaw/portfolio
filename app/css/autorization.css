@@ -25,12 +25,13 @@
     margin-bottom: 14px;
 }
 .autorization-label{
-    display: block;
+    display: inline-block;
     font-size: 36px;
     color: #959aa8;
     font-family:'firasans-light', sans-serif;
 }
 .autorization-input{
+    display: block;
     width: 424px;
     height: 62px;
     background-color: #fff;
