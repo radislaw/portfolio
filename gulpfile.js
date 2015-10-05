@@ -1,5 +1,6 @@
 var gulp = require("gulp"),
 //    jade = require("gulp-jade"),
+    concatCss = require('gulp-concat-css');
     prettify = require("gulp-prettify"),
     browserSinc = require('browser-sync'),
     imagemin = require('gulp-imagemin'),
@@ -12,6 +13,12 @@ var gulp = require("gulp"),
     .pipe(prettify({indent_size: 4}))
     .pipe(gulp.dest('app/'))
 });*/
+
+gulp.task('cssConcat', function () {
+        gulp.src('css/*.css')
+        .pipe(concatCss('bundle.css'))
+        .pipe(gulp.dest('css/'));
+});
 
 gulp.task('server'/*, ['jade']*/, function () {
     browserSinc({
@@ -30,6 +37,7 @@ gulp.task('watch', function(){
     ]).on('change', browserSinc.reload);
 //    gulp.watch('app/*.jade', ['jade']);
     gulp.watch('images/*', ['images']);
+    gulp.watch('css/*.css', ['cssConcat']);
 });
 
 gulp.task('images', function () {
@@ -42,7 +50,7 @@ gulp.task('images', function () {
         .pipe(gulp.dest('app/img'));
 });
 
-gulp.task('default',['images', 'server', /*'jade',*/ 'watch']);
+gulp.task('default',['images', 'cssConcat', 'server', /*'jade',*/ 'watch']);
 
 
 
