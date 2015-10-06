@@ -1,41 +1,114 @@
-.variable__block__info{
+.variable__block__info {
     min-height: 842px;
 }
-.preview-wrap{
-    float: left;
+
+.preview-wrap {
     width: 182px;
     margin: 0;
-    margin-left: 30px;
+    float: left;
 }
-.preview-wrap:first-child{
-    margin: 0;
-}
-.preview__body{
+
+.preview__body {
     margin: 0 20px;
 }
-.hover{
-    display: none;
+
+
+/* begin hover effect*/
+
+.preview-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
-.hover:hover{
-    display: block;
+
+.preview-item {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.preview-item:hover .caption {
+    opacity: 1;
+}
+
+
+/*.preview-item:hover .peview-img {
+    opacity: 1;
+    transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
+}*/
+
+.preview-list .peview-img {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+
+.preview-list .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+
+
+/*.preview-list .peview-img {
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}*/
+
+.preview-list .blur {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 128px;
     width: 182px;
-    height: 129px;
-    background-color: rgba(1, 108, 164, 0.749);
+    z-index: 5;
+    position: absolute;
+    border-radius: 7px;
 }
+
+.preview-list .caption-text {
+    z-index: 10;
+    color: #fff;
+    width: 66px;
+    height: 22px;
+    font-size: 12px;
+    font-family: 'firasans-book', sans-serif;
+    border: 2.5px solid rgb(239, 243, 247);
+    border-radius: 4px;
+    position: absolute;
+    text-align: center;
+    top: 55px;
+    left: 55px;
+}
+
+
+/* end hover effect*/
+
 .peview-img {
     border: 2px solid rgb(59, 168, 192);
     border-radius: 7px;
 }
-.figcaption{
+
+.figcaption {
     text-align: center;
 }
-.site-name{
+
+.site-name {
     color: #3ba8c0;
     font-family: 'firasans-lightitalic', sans-serif;
     font-size: 13px;
     text-decoration: none;
 }
-.project-info{
+
+.project-info {
     font-family: 'firasans-light', sans-serif;
     font-size: 15px;
 }

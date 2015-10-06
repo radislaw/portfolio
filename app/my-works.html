@@ -63,52 +63,77 @@
       <section class="variable-block">
         <article class="variable__block__info">
           <h2 class="info__header">Мои работы</h2>
-          <div class="preview__body">
-            <figure class="preview-wrap"><a href="/site.ru" class="peview-link"><img src="../img/preview-1.jpg" alt="" class="peview-img"/></a>
-              <div class="hover"></div>
-              <figcaption class="figcaption"><a href="#" class="site-name">www.site.ru</a>
-                <p class="project-info">Информация о проекте 1 превью 2 строки....</p>
-              </figcaption>
-            </figure>
-            <figure class="preview-wrap"><a href="/site.ru" class="peview-link"><img src="../img/preview-2.jpg" alt="" class="peview-img"/></a>
-              <figcaption class="figcaption"><a href="#" class="site-name">www.site.ru</a>
-                <p class="project-info">Информация о проекте 1 превью 2 строки....</p>
-              </figcaption>
-            </figure>
-            <figure class="preview-wrap"><a href="/site.ru" class="peview-link"><img src="../img/preview-3.jpg" alt="" class="peview-img"/></a>
-              <figcaption class="figcaption"><a href="#" class="site-name">www.site.ru</a>
-                <p class="project-info">Информация о проекте 1 превью 2 строки....</p>
-              </figcaption>
-            </figure>
-            <figure class="preview-wrap"><a href="/site.ru" class="peview-link"><img src="../img/preview-4.jpg" alt="" class="peview-img"/></a>
-              <figcaption class="figcaption"><a href="#" class="site-name">www.site.ru</a>
-                <p class="project-info">Информация о проекте 1 превью 2 строки....</p>
-              </figcaption>
-            </figure>
-            <div class="preview-wrap">
-              <div id="pop-up" class="add-project"></div>
-              <div id="element_to_pop_up">
-                <div class="add-project-wrap">
-                  <h1 class="add-project-title">Добавление проекта</h1>
-                  <form action="#" class="add-project-form">
-                    <label class="add-project-label">Название проекта
-                      <input type="text" id="project-name-field" placeholder="Введите название" class="add-project-input"/>
-                    </label>
-                    <label class="add-project-label">Картинка проекта
-                      <input type="file" id="file-field" placeholder="Загрузите изображение" class="add-project-input"/>
-                    </label>
-                    <label class="add-project-label">URL проекта
-                      <input type="url" id="url-field" placeholder="Добавьте ссылку" class="add-project-input"/>
-                    </label>
-                    <label class="add-project-label">Описание
-                      <textarea name="project-description" cols="10" rows="10" id="message-field" placeholder="Пара слов о Вашем проекте" class="add-project-description"></textarea>
-                      <input type="submit" value="Добавить" class="add-project-submit"/>
-                    </label>
-                  </form>
+          <ul class="preview-list">
+            <li class="preview-item">
+              <figure class="preview-wrap"><a href="/site.ru" class="peview-link"><img src="../img/preview-1.jpg" alt="" class="peview-img"/></a>
+                <figcaption class="figcaption"><a href="#" class="site-name">www.site.ru</a>
+                  <p class="project-info">Информация о проекте 1 превью 2 строки....</p>
+                </figcaption>
+              </figure>
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">название</div>
+              </div>
+            </li>
+            <li class="preview-item">
+              <figure class="preview-wrap"><a href="/site.ru" class="peview-link"><img src="../img/preview-2.jpg" alt="" class="peview-img"/></a>
+                <figcaption class="figcaption"><a href="#" class="site-name">www.site.ru</a>
+                  <p class="project-info">Информация о проекте 1 превью 2 строки....</p>
+                </figcaption>
+              </figure>
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">название</div>
+              </div>
+            </li>
+            <li class="preview-item">
+              <figure class="preview-wrap"><a href="/site.ru" class="peview-link"><img src="../img/preview-3.jpg" alt="" class="peview-img"/></a>
+                <figcaption class="figcaption"><a href="#" class="site-name">www.site.ru</a>
+                  <p class="project-info">Информация о проекте 1 превью 2 строки....</p>
+                </figcaption>
+              </figure>
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">название</div>
+              </div>
+            </li>
+            <li class="preview-item">
+              <figure class="preview-wrap"><a href="/site.ru" class="peview-link"><img src="../img/preview-4.jpg" alt="" class="peview-img"/></a>
+                <figcaption class="figcaption"><a href="#" class="site-name">www.site.ru</a>
+                  <p class="project-info">Информация о проекте 1 превью 2 строки....</p>
+                </figcaption>
+              </figure>
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">название</div>
+              </div>
+            </li>
+            <li class="preview-item">
+              <div class="preview-wrap">
+                <div id="pop-up" class="add-project"></div>
+                <div id="element_to_pop_up">
+                  <div class="add-project-wrap">
+                    <h1 class="add-project-title">Добавление проекта</h1>
+                    <form action="#" class="add-project-form">
+                      <label class="add-project-label">Название проекта
+                        <input type="text" id="project-name-field" placeholder="Введите название" class="add-project-input"/>
+                      </label>
+                      <label class="add-project-label">Картинка проекта
+                        <input type="file" id="file-field" placeholder="Загрузите изображение" class="add-project-input"/>
+                      </label>
+                      <label class="add-project-label">URL проекта
+                        <input type="url" id="url-field" placeholder="Добавьте ссылку" class="add-project-input"/>
+                      </label>
+                      <label class="add-project-label">Описание
+                        <textarea name="project-description" cols="10" rows="10" id="message-field" placeholder="Пара слов о Вашем проекте" class="add-project-description"></textarea>
+                        <input type="submit" value="Добавить" class="add-project-submit"/>
+                      </label>
+                    </form>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </article>
       </section>
     </div>
