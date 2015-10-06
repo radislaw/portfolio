@@ -2,7 +2,7 @@
     width: 182px;
     height: 128px;
     border: 1px dashed rgb(59, 168, 192);
-    background: rgba(236, 251, 255, 0.639) url(../img/add-img.png) no-repeat center;
+    background: rgb(236, 251, 255) url(../img/add-img.png) no-repeat center;
     border-radius: 7px;
     cursor: pointer;
 }
