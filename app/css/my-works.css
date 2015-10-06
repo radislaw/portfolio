@@ -18,6 +18,7 @@
 .preview-list {
     list-style-type: none;
     margin: 0px;
+    margin-top: 5px;
     padding: 0px;
 }
 
@@ -28,21 +29,12 @@
     overflow: hidden;
     margin-left: 20px;
     margin-right: 10px;
+    margin-bottom: 40px;
 }
 
 .preview-item:hover .caption {
     opacity: 1;
 }
-
-
-/*.preview-item:hover .peview-img {
-    opacity: 1;
-    transform: scale(1.15, 1.15);
-    -webkit-transform: scale(1.15, 1.15);
-    -moz-transform: scale(1.15, 1.15);
-    -ms-transform: scale(1.15, 1.15);
-    -o-transform: scale(1.15, 1.15);
-}*/
 
 .preview-list .peview-img {
     margin: 0px;
@@ -58,12 +50,6 @@
     -webkit-transition: all 0.45s ease-in-out;
     transition: all 0.45s ease-in-out;
 }
-
-
-/*.preview-list .peview-img {
-    -webkit-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}*/
 
 .preview-list .blur {
     background-color: rgba(0, 0, 0, 0.65);
@@ -111,4 +97,5 @@
 .project-info {
     font-family: 'firasans-light', sans-serif;
     font-size: 15px;
+    margin: 0;
 }

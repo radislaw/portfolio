@@ -1,15 +1,17 @@
-.touch-form{
+.touch-form {
     border-radius: 4px;
     overflow: hidden;
     background-color: #eff3f7;
     min-height: 840px;
     margin-bottom: 27px;
 }
-.touch-form-wrap{
+
+.touch-form-wrap {
     width: 402px;
     margin: 0 auto;
 }
-.touch-form-title{
+
+.touch-form-title {
     margin: 0;
     height: 138px;
     font-size: 27px;
@@ -22,65 +24,32 @@
     line-height: 127px;
     margin-bottom: 40px;
 }
-.touch-label{
+
+.touch-label {
     display: inline-block;
     font-size: 19px;
     color: #959aa8;
-    font-family:'firasans-light', sans-serif;
+    font-family: 'firasans-light', sans-serif;
 }
 
-.touch-label:first-child{
+.touch-label:first-child {
     margin-right: 13px;
 }
-.touch-input{
+
+.touch-input {
     display: block;
     width: 192px;
     height: 41px;
     background-color: #fff;
     border: 1px solid rgb(72, 203, 232);
     border-radius: 4px;
-    font-family:'firasans-light', sans-serif;
+    font-family: 'firasans-light', sans-serif;
     font-size: 13px;
     padding: 10px;
     margin-bottom: 9px;
 }
 
-.capcha-input[placeholder],
-.touch-message[placeholder],
-.touch-input[placeholder] {
-    text-overflow: ellipsis;
-    color: #48cbe8;
-}
-
-.capcha-input::-moz-placeholder,
-.touch-message::-moz-placeholder,
-.touch-input::-moz-placeholder {
-    text-overflow: ellipsis;
-    color: #48cbe8;
-}
-
-.capcha-input:-moz-placeholder,
-.touch-message:-moz-placeholder,
-.touch-input:-moz-placeholder {
-    text-overflow: ellipsis;
-    color: #48cbe8;
-}
-
-.capcha-input:-ms-input-placeholder,
-.touch-message:-ms-input-placeholder,
-.touch-input:-ms-input-placeholder {
-    text-overflow: ellipsis;
-    color: #48cbe8;
-}
-
-.capcha-input::-webkit-input-placeholder,
-.touch-message::-webkit-input-placeholder,
-.touch-input::-webkit-input-placeholder{
-    text-overflow: ellipsis;
-    color: #48cbe8;
-}
-
-.touch-message{
+.touch-message {
     display: block;
     width: 402px;
     height: 183px;
@@ -90,14 +59,17 @@
     padding: 10px;
     margin-bottom: 11px;
 }
-.capcha-wrap{
+
+.capcha-wrap {
     position: relative;
     margin-bottom: 12px;
 }
-.touch-capcha-label{
+
+.touch-capcha-label {
     font-size: 17px;
 }
-.capcha{
+
+.capcha {
     display: inline-block;
     border: 1px solid rgb(72, 203, 232);
     border-radius: 4px;
@@ -109,9 +81,9 @@
     padding: 0;
 }
 
-.capcha-input{
+.capcha-input {
     position: absolute;
-    top:21px;
+    top: 21px;
     display: inline-block;
     width: 192px;
     height: 32px;
@@ -122,7 +94,7 @@
     line-height: 32px;
 }
 
-.touch-submit{
+.touch-submit {
     float: left;
     color: #fff;
     background-color: #48cbe8;
@@ -134,7 +106,8 @@
     font-size: 19px;
     line-height: 31px;
 }
-.touch-reset{
+
+.touch-reset {
     float: right;
     color: #fff;
     background-color: #849db5;
