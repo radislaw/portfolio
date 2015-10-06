@@ -1,0 +1,70 @@
+.add-project{
+    width: 182px;
+    height: 128px;
+    border: 1px dashed rgb(59, 168, 192);
+    background: url(../img/add-img.png) no-repeat center;
+    background-color: rgba(236, 251, 255, 0.639);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#element_to_pop_up{
+    display: none;
+}
+.add-project-wrap{
+    width: 362px;
+    height: 493px;
+    background-color: #eff3f7;
+    border-radius: 5px;
+    box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.35);
+    overflow: hidden;
+}
+
+.add-project-title{
+    margin: 0;
+    height: 53px;
+    font-size: 25px;
+    font-family: 'firasans-regular', sans-serif;
+    color: #fff;
+    background-color: #48cbe8;
+    border-bottom: 9px solid #67dffa;
+    text-align: left;
+    line-height: 44px;
+    margin-bottom: 10px;
+}
+
+.add-project-form{
+    width: 320px;
+    margin: 0 auto;
+}
+.add-project-label{
+    display: inline-block;
+    font-size: 17px;
+    color: #959aa8;
+    font-family:'firasans-book', sans-serif;
+}
+
+.add-project-input{
+    display: block;
+    width: 320px;
+    height: 41px;
+    background-color: #fff;
+    border: 1px solid rgb(72, 203, 232);
+    border-radius: 4px;
+    font-family:'firasans-light', sans-serif;
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*form.add-project-form(action="#")
+            label.add-project-label Название проекта
+                input.add-project-input(type="text" id="project-name-field" placeholder="Введите название")
+            label.add-project-label Картинка проекта
+                input.add-project-input(type="file" id="file-field" placeholder="Загрузите изображение")
+            label.add-project-label URL проекта
+                input.add-project-input(type="url" id="url-field" placeholder="Добавьте ссылку")
+            label.add-project-label Описание
+                textarea.add-project-description(name="project-description", cols="10", rows="10" id="message-field" placeholder="Пара слов о Вашем проекте")
+                input.add-project-submit(type="submit" value="Добавить")*/
