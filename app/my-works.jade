@@ -20,9 +20,9 @@ head
     // custom CSS
     link(rel="stylesheet", href="css/main.css")
     link(rel="stylesheet", href="css/my-works.css")
-    link(rel="stylesheet", href="css/autorization.css")
+    link(rel="stylesheet", href="css/add-project.css")
     // header js
-    script(src="js/html5shiv.js")
+    script(src="bower/modernizr/modernizr.js")
 body
     <!--[if lt IE 8]>
     <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
@@ -34,7 +34,8 @@ body
             include jade-includes/_my-works-info.jade
     include jade-includes/_footer.jade
         // vendor js
-        script(src="bower/jquery/jquery.js")
+        script(src="bower/jquery/jquery.min.js")
         script(src="bower/bPopup/jquery.bpopup.min.js")
+        script(src="bower/jquery-placeholder/jquery.placeholder.min.js")
         // custom js
         script(src="js/main.js")

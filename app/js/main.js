@@ -1,3 +1,4 @@
+// BPOPUP
 // Semicolon (;) to ensure closing of earlier scripting
     // Encapsulation
     // $ is assigned to jQuery
@@ -21,3 +22,15 @@
         });
 
     })(jQuery);
+
+// PLACEHOLDER
+
+$(document).ready(function () {
+
+    if(!Modernizr.input.placeholder){
+
+        $('input, textarea').placeholder();
+
+    }
+
+});
