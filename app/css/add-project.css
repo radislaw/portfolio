@@ -22,11 +22,11 @@
 
 .add-project-title {
     margin: 0;
-    padding-left: 13px;
+    padding: 0 13px;
     height: 53px;
     font-size: 25px;
     color: #fff;
-    background-color: #48cbe8;
+    background: #48cbe8 url(../img/close.png) no-repeat 325px center;
     border-bottom: 9px solid #67dffa;
     line-height: 44px;
     margin-bottom: 10px;
