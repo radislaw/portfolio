@@ -6,6 +6,7 @@
     width: 182px;
     margin: 0;
     float: left;
+    overflow: hidden;
 }
 
 .preview__body {
@@ -23,45 +24,45 @@
 }
 
 .preview-item {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     padding: 0px;
     position: relative;
-    overflow: hidden;
     margin-left: 20px;
     margin-right: 10px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
-.preview-item:hover .caption {
-    opacity: 1;
+.peview-img-wrap {
+    border: 2px solid rgb(59, 168, 192);
+    border-radius: 7px;
+    overflow: hidden;
 }
 
-.preview-list .peview-img {
+.peview-img-wrap:hover .peview-img-link {
+    display: block;
+}
+
+.peview-img {
     margin: 0px;
     padding: 0px;
     float: left;
     z-index: 4;
 }
 
-.preview-list .caption {
-    cursor: pointer;
+.peview-img-link {
+    display: none;
+    background: url(../img/transparent-bg.png) no-repeat;
+    height: 125px;
+    width: 178px;
     position: absolute;
-    opacity: 0;
-    -webkit-transition: all 0.45s ease-in-out;
-    transition: all 0.45s ease-in-out;
+    border-radius: 4.5px;
 }
 
-.preview-list .blur {
-    background-color: rgba(0, 0, 0, 0.65);
-    height: 128px;
-    width: 182px;
-    z-index: 5;
-    position: absolute;
-    border-radius: 7px;
-}
-
-.preview-list .caption-text {
+.peview-img-text {
     z-index: 10;
+    text-decoration: none;
     color: #fff;
     width: 66px;
     height: 22px;
@@ -77,11 +78,6 @@
 
 
 /* end hover effect*/
-
-.peview-img {
-    border: 2px solid rgb(59, 168, 192);
-    border-radius: 7px;
-}
 
 .figcaption {
     text-align: center;
