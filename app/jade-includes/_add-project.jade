@@ -6,10 +6,17 @@
             label.add-project-label Название проекта
                 input.add-project-input(type="text" id="project-name-field" placeholder="Введите название")
             label.add-project-label Картинка проекта
-                .add-project-input.upload-img Загрузите изображение
-                    input.add-file(type="file" id="file-field" placeholder="Загрузите изображение")
+                .upload-wrap
+                    input.add-file(type="file" name="add-file" id="file-field")
+                    .upload-text Загрузите изображение
+                    .upload-img
             label.add-project-label URL проекта
                 input.add-project-input(type="url" id="url-field" placeholder="Добавьте ссылку")
             label.add-project-label Описание
                 textarea.add-project-description(name="project-description", cols="10", rows="10" id="message-field" placeholder="Пара слов о Вашем проекте")
                 input.add-project-submit(type="submit" value="Добавить")
+
+
+//
+    .add-project-input.upload-img Загрузите изображение
+//                    input.add-file(type="file" id="file-field" placeholder="Загрузите изображение")

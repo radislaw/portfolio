@@ -118,8 +118,10 @@
                         <input type="text" id="project-name-field" placeholder="Введите название" class="add-project-input"/>
                       </label>
                       <label class="add-project-label">Картинка проекта
-                        <div class="add-project-input upload-img">Загрузите изображение
-                          <input type="file" id="file-field" placeholder="Загрузите изображение" class="add-file"/>
+                        <div class="upload-wrap">
+                          <input type="file" name="add-file" id="file-field" class="add-file"/>
+                          <div class="upload-text">Загрузите изображение</div>
+                          <div class="upload-img"></div>
                         </div>
                       </label>
                       <label class="add-project-label">URL проекта
@@ -132,6 +134,9 @@
                     </form>
                   </div>
                 </div>
+                <!--.add-project-input.upload-img Загрузите изображение
+                -->
+                <!--                    input.add-file(type="file" id="file-field" placeholder="Загрузите изображение")-->
               </div>
             </li>
           </ul>

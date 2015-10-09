@@ -67,14 +67,38 @@
     color: #48cbe8;
 }
 
+.upload-wrap {
+    position: relative;
+}
+
 .upload-img {
-    background: #fff url(../img/upload.png) no-repeat right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 270px;
+    z-index: 9;
+    cursor: pointer;
+    background: #fff url(../img/upload.png) center center no-repeat;
 }
 
 .add-file {
-    opacity: 0;
-    filter: alpha(opacity: 0);
-    background: url(../img/upload.png);
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.upload-text {
+    width: 320px;
+    height: 41px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid rgb(72, 203, 232);
+    border-radius: 4px;
+    font-family: 'firasans-light', sans-serif;
+    font-size: 13px;
+    color: #48cbe8;
+    outline: 0px;
 }
 
 .add-project-description {
