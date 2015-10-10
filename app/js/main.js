@@ -16,7 +16,12 @@
             e.preventDefault();
 
             // Triggering bPopup when click event is fired
-            $('#element_to_pop_up').bPopup();
+            $('#element_to_pop_up').bPopup({
+                modalClose: false,
+                speed: 450,
+                transition: 'slideDown',
+                modalColor: '#1C667A'
+            });
 
         });
 
@@ -24,7 +29,11 @@
 
 })(jQuery);
 
-$('.add-file').on('change', function () {
+// FAKE FOR UPLOAD FILE FIELD
+
+$(document).on('change', '.add-file', function () {
+
+    // $('.add-file').on('change', function () {
 
     var
         $this = $(this),
