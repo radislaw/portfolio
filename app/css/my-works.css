@@ -64,8 +64,9 @@
     z-index: 10;
     text-decoration: none;
     color: #fff;
-    width: 66px;
-    height: 22px;
+    min-width: 66px;
+    max-width: 75%;
+    min-height: 22px;
     font-size: 12px;
     font-family: 'firasans-book', sans-serif;
     border: 2.5px solid rgb(239, 243, 247);
@@ -74,6 +75,7 @@
     text-align: center;
     top: 55px;
     left: 55px;
+    overflow: hidden;
 }
 
 

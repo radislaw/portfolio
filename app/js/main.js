@@ -2,20 +2,18 @@
 // Semicolon (;) to ensure closing of earlier scripting
 // Encapsulation
 // $ is assigned to jQuery
-;
-(function ($) {
 
-    // DOM Ready
-    $(function () {
+var myModule = (function () {
 
-        // Binding a click event
-        // From jQuery v.1.7.0 use .on() instead of .bind()
-        $('#pop-up').bind('click', function (e) {
+    var init = function () {
+        _setUpListners();
+    };
+    var _setUpListners = function () {
 
-            // Prevents the default action to be triggered.
+        $('#pop-up').on('click', function (e) {
+
             e.preventDefault();
 
-            // Triggering bPopup when click event is fired
             $('#element_to_pop_up').bPopup({
                 modalClose: false,
                 speed: 450,
@@ -24,10 +22,16 @@
             });
 
         });
+    };
 
-    });
+    return {
+        init: init
+    };
+
 
 })(jQuery);
+
+myModule.init();
 
 // FAKE FOR UPLOAD FILE FIELD
 
