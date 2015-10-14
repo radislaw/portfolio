@@ -1,18 +1,18 @@
-var touch = (function () {
+var loginForm = (function () {
 
     var init = function () {
             _setUpListeners();
 
         },
         _setUpListeners = function () {
-            $('#contact-me').on('submit', _submitForm);
+            $('.autorization-form').on('submit', _submitForm);
         };
 
     var _submitForm = function (e) {
         e.preventDefault();
 
         var form = $(this),
-            url = 'contact-me.php',
+            url = 'login.php',
             defObj = _ajaxForm(form, url);
     };
 
@@ -25,4 +25,4 @@ var touch = (function () {
 
 })();
 
-touch.init();
+loginForm.init();

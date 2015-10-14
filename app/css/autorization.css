@@ -1,6 +1,6 @@
 .autorization {
     width: 590px;
-    height: 484px;
+    min-height: 484px;
     margin: 150px auto;
     color: white;
     background-color: #eff3f7;
@@ -9,10 +9,12 @@
     box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
     text-align: center;
 }
-.autorization-form{
+
+.autorization-form {
     padding: 0 30px;
 }
-.autorization-title{
+
+.autorization-title {
     margin: 0;
     height: 107px;
     font-size: 40px;
@@ -24,20 +26,22 @@
     line-height: 92px;
     margin-bottom: 14px;
 }
-.autorization-label{
+
+.autorization-label {
     display: inline-block;
     font-size: 36px;
     color: #959aa8;
-    font-family:'firasans-light', sans-serif;
+    font-family: 'firasans-light', sans-serif;
 }
-.autorization-input{
+
+.autorization-input {
     display: block;
     width: 424px;
     height: 62px;
     background-color: #fff;
     border: 1px solid rgb(72, 203, 232);
     border-radius: 4px;
-    font-family:'firasans-light', sans-serif;
+    font-family: 'firasans-light', sans-serif;
     font-size: 17px;
     padding: 18px;
     margin-bottom: 10px;
@@ -62,11 +66,13 @@
     text-overflow: ellipsis;
     color: #48cbe8;
 }
-.autorization-input::-webkit-input-placeholder{
+
+.autorization-input::-webkit-input-placeholder {
     text-overflow: ellipsis;
     color: #48cbe8;
 }
-.autorization-submit{
+
+.autorization-submit {
     color: #fff;
     background-color: #48cbe8;
     border-radius: 8px;

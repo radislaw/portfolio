@@ -14,6 +14,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <!-- vendor CSS-->
   <link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css"/>
   <!-- fonts CSS-->
   <link rel="stylesheet" href="fonts/fira/fira.css"/>
   <link rel="stylesheet" href="fonts/Proxima-Nova/proximanovacond-semibold.css"/>
@@ -30,12 +31,12 @@
   <main class="page-row page-row-expanded clearfix">
     <div class="autorization">
       <h1 class="autorization-title">Авторизируйтесь</h1>
-      <form action="#" class="autorization-form">
+      <form id="autorization" action="#" method="POST" role="form" class="autorization-form">
         <label class="autorization-label"> Логин
-          <input type="text" id="logun-field" placeholder="Введите логин" class="autorization-input"/>
+          <input id="autorization-login-field" type="text" name="login" placeholder="Введите логин" qtip-content="Введите логин" class="autorization-input"/>
         </label>
         <label class="autorization-label">Пароль
-          <input type="password" id="password-field" placeholder="Введите пароль" class="autorization-input"/>
+          <input id="autorization-password-field" type="password" name="password" placeholder="Введите пароль" qtip-content="Введите пароль" class="autorization-input"/>
           <input type="submit" value="Войти" class="autorization-submit"/>
         </label>
       </form>
@@ -53,7 +54,7 @@
           <!-- custom js-->
           <script src="js/main.js"></script>
           <script src="js/validation.js"></script>
-          <script src="js/touch.js"></script>
+          <script src="js/login-form.js"></script>
         </div>
       </div>
     </footer>

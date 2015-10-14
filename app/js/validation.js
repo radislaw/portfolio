@@ -12,7 +12,7 @@ var validation = (function () {
     var _removeError = function () {
         $(this).removeClass('has-error');
     };
-    var _clearForm = function () {
+    var _clearForm = function (form) {
         var form = $(this);
         form.find('input, textarea').trigger('hideTooltip');
         form.find('.has-error').removeClass('has-error');

@@ -1,8 +1,8 @@
 .autorization
     h1.autorization-title Авторизируйтесь
-    form.autorization-form(action="#")
+    form#autorization.autorization-form(action="#" method="POST" role="form")
         label.autorization-label  Логин
-            input.autorization-input(type="text" id="logun-field" placeholder="Введите логин")
+            input#autorization-login-field.autorization-input(type="text" name="login" placeholder="Введите логин" qtip-content="Введите логин")
         label.autorization-label Пароль
-            input.autorization-input(type="password" id="password-field" placeholder="Введите пароль")
+            input#autorization-password-field.autorization-input(type="password" name="password" placeholder="Введите пароль" qtip-content="Введите пароль")
             input.autorization-submit(type="submit" value="Войти")

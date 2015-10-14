@@ -1,4 +1,4 @@
-var touch = (function () {
+var addProject = (function () {
 
     var init = function () {
             _setUpListeners();
@@ -25,4 +25,4 @@ var touch = (function () {
 
 })();
 
-touch.init();
+addProject.init();
