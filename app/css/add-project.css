@@ -126,3 +126,19 @@
     line-height: 31px;
     margin: 0 auto;
 }
+
+.add-project-submit:active {
+    border: none;
+    border-bottom: 1px solid #3ba8c0;
+    border-top: 1px solid #3ba8c0;
+    font-size: 18px;
+}
+
+.add-project-submit:focus {
+    outline: none;
+}
+
+
+}
+
+}

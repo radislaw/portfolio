@@ -3,7 +3,7 @@
 // Encapsulation
 // $ is assigned to jQuery
 
-var myModule = (function () {
+var popup = (function () {
 
     var init = function () {
         _setUpListners();
@@ -12,16 +12,12 @@ var myModule = (function () {
     var _setUpListners = function () {
 
         $('#pop-up').on('click', _popup);
+        $('.b-close').on('click', _clearForm);
     };
 
     var _popup = function (e) {
         e.preventDefault();
         $('#element_to_pop_up').bPopup({
-            onClose: function (form) {
-                var form = $(this);
-                form.find('.has-error').removeClass('has-error');
-                form.find('#add-new-project').trigger('reset');
-            },
             modalClose: false,
             speed: 450,
             transition: 'slideDown',
@@ -31,14 +27,17 @@ var myModule = (function () {
 
     };
 
+    var _clearForm = function () {
+        $('input, textarea').removeClass('has-error').trigger('hideTooltip');
+    };
+
     return {
         init: init
     };
 
-
 })(jQuery);
 
-myModule.init();
+popup.init();
 
 // FAKE FOR UPLOAD FILE FIELD
 

@@ -85,3 +85,14 @@
     margin: 0 auto;
     margin-top: 24px;
 }
+
+.autorization-submit:active {
+    border: none;
+    border-bottom: 1px solid #3ba8c0;
+    border-top: 1px solid #3ba8c0;
+    font-size: 35px;
+}
+
+.autorization-submit:focus {
+    outline: none;
+}
