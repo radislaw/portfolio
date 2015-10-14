@@ -11,15 +11,21 @@ var myModule = (function () {
 
     var _setUpListners = function () {
 
-        $('#pop-up').on('click', _popup)
+        $('#pop-up').on('click', _popup);
     };
 
     var _popup = function (e) {
         e.preventDefault();
         $('#element_to_pop_up').bPopup({
+            onClose: function (form) {
+                var form = $(this);
+                form.find('.has-error').removeClass('has-error');
+                form.find('#add-new-project').trigger('reset');
+            },
             modalClose: false,
             speed: 450,
             transition: 'slideDown',
+            transitionClose: 'fadeIn',
             modalColor: '#1C667A'
         });
 

@@ -482,9 +482,10 @@ input::-webkit-input-placeholder {
 .qtip-mystyle {
     background-color: #f97e76;
     border-color: #f97e76;
-    font-family: 'Arial';
+    font-family: 'fira_sansbook';
     color: #ffffff;
     font-size: 13px;
+    border-radius: 2px;
 }
 
 .has-error {
