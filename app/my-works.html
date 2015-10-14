@@ -114,9 +114,9 @@
                     <h1 class="add-project-title">Добавление проекта
                       <div class="pop-up-close b-close"></div>
                     </h1>
-                    <form id="add-new-project" action="#" role="form" class="add-project-form">
+                    <form id="add-new-project" action="#" method="POST" role="form" class="add-project-form">
                       <label class="add-project-label">Название проекта
-                        <input id="project-name-field" type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="add-project-input"/>
+                        <input id="project-name-field" type="text" name="project-name" placeholder="Введите название" qtip-content="Вы не ввели название" class="add-project-input"/>
                       </label>
                       <label class="add-project-label">Картинка проекта
                         <div class="upload-wrap">
@@ -126,10 +126,10 @@
                         </div>
                       </label>
                       <label class="add-project-label">URL проекта
-                        <input type="url" id="url-field" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="add-project-input"/>
+                        <input id="url-field" type="url" name="project-name" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="add-project-input"/>
                       </label>
                       <label class="add-project-label">Описание
-                        <textarea name="project-description" cols="10" rows="10" id="message-field" placeholder="Пара слов о Вашем проекте" qtip-content="Описание проекта обязательно" class="add-project-description"></textarea>
+                        <textarea id="message-field" name="project-description" cols="10" rows="10" placeholder="Пара слов о Вашем проекте" qtip-content="Описание проекта обязательно" class="add-project-description"></textarea>
                         <input type="submit" value="Добавить" class="add-project-submit"/>
                       </label>
                     </form>
@@ -155,7 +155,7 @@
           <!-- custom js-->
           <script src="js/main.js"></script>
           <script src="js/validation.js"></script>
-          <script src="js/touch.js"></script>
+          <script src="js/add-project.js"></script>
         </div>
       </div>
     </footer>
