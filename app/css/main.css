@@ -475,3 +475,19 @@ input::-webkit-input-placeholder {
     text-overflow: ellipsis;
     color: #48cbe8;
 }
+
+
+/* qtip style */
+
+.qtip-mystyle {
+    background-color: #f97e76;
+    border-color: #f97e76;
+    font-family: 'Arial';
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.has-error {
+    border: 1px solid red !important;
+    background: rgba(249, 126, 118, 0.33) !important;
+}
