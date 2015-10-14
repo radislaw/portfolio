@@ -2,21 +2,16 @@
     .add-project-wrap
         h1.add-project-title Добавление проекта
             .pop-up-close.b-close
-        form.add-project-form(action="#")
+        form.add-project-form#add-new-project(action="#" role="form")
             label.add-project-label Название проекта
-                input.add-project-input(type="text" id="project-name-field" placeholder="Введите название")
+                input.add-project-input#project-name-field(type="text" placeholder="Введите название" qtip-content="Вы не ввели название")
             label.add-project-label Картинка проекта
                 .upload-wrap
-                    input.add-file(type="file" name="add-file" id="file-field")
+                    input.add-file#file-field(type="file" name="add-file[]")
                     .upload-text Загрузите изображение
                     .upload-img
             label.add-project-label URL проекта
-                input.add-project-input(type="url" id="url-field" placeholder="Добавьте ссылку")
+                input.add-project-input(type="url" id="url-field" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку")
             label.add-project-label Описание
-                textarea.add-project-description(name="project-description", cols="10", rows="10" id="message-field" placeholder="Пара слов о Вашем проекте")
+                textarea.add-project-description(name="project-description", cols="10", rows="10" id="message-field" placeholder="Пара слов о Вашем проекте" qtip-content="Описание проекта обязательно")
                 input.add-project-submit(type="submit" value="Добавить")
-
-
-//
-    .add-project-input.upload-img Загрузите изображение
-//                    input.add-file(type="file" id="file-field" placeholder="Загрузите изображение")

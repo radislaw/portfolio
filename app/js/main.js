@@ -8,20 +8,21 @@ var myModule = (function () {
     var init = function () {
         _setUpListners();
     };
+
     var _setUpListners = function () {
 
-        $('#pop-up').on('click', function (e) {
+        $('#pop-up').on('click', _popup)
+    };
 
-            e.preventDefault();
-
-            $('#element_to_pop_up').bPopup({
-                modalClose: false,
-                speed: 450,
-                transition: 'slideDown',
-                modalColor: '#1C667A'
-            });
-
+    var _popup = function (e) {
+        e.preventDefault();
+        $('#element_to_pop_up').bPopup({
+            modalClose: false,
+            speed: 450,
+            transition: 'slideDown',
+            modalColor: '#1C667A'
         });
+
     };
 
     return {

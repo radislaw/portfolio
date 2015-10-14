@@ -19,6 +19,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <!-- vendor CSS-->
   <link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css"/>
   <!-- fonts CSS-->
   <link rel="stylesheet" href="fonts/fira/fira.css"/>
   <link rel="stylesheet" href="fonts/Proxima-Nova/proximanovacond-semibold.css"/>
@@ -113,30 +114,27 @@
                     <h1 class="add-project-title">Добавление проекта
                       <div class="pop-up-close b-close"></div>
                     </h1>
-                    <form action="#" class="add-project-form">
+                    <form id="add-new-project" action="#" role="form" class="add-project-form">
                       <label class="add-project-label">Название проекта
-                        <input type="text" id="project-name-field" placeholder="Введите название" class="add-project-input"/>
+                        <input id="project-name-field" type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="add-project-input"/>
                       </label>
                       <label class="add-project-label">Картинка проекта
                         <div class="upload-wrap">
-                          <input type="file" name="add-file" id="file-field" class="add-file"/>
+                          <input id="file-field" type="file" name="add-file[]" class="add-file"/>
                           <div class="upload-text">Загрузите изображение</div>
                           <div class="upload-img"></div>
                         </div>
                       </label>
                       <label class="add-project-label">URL проекта
-                        <input type="url" id="url-field" placeholder="Добавьте ссылку" class="add-project-input"/>
+                        <input type="url" id="url-field" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="add-project-input"/>
                       </label>
                       <label class="add-project-label">Описание
-                        <textarea name="project-description" cols="10" rows="10" id="message-field" placeholder="Пара слов о Вашем проекте" class="add-project-description"></textarea>
+                        <textarea name="project-description" cols="10" rows="10" id="message-field" placeholder="Пара слов о Вашем проекте" qtip-content="Описание проекта обязательно" class="add-project-description"></textarea>
                         <input type="submit" value="Добавить" class="add-project-submit"/>
                       </label>
                     </form>
                   </div>
                 </div>
-                <!--.add-project-input.upload-img Загрузите изображение
-                -->
-                <!--                    input.add-file(type="file" id="file-field" placeholder="Загрузите изображение")-->
               </div>
             </li>
           </ul>
@@ -152,9 +150,12 @@
           <!-- vendor js-->
           <script src="bower/jquery/jquery.min.js"></script>
           <script src="bower/bPopup/jquery.bpopup.min.js"></script>
+          <script src="bower/qtip2/jquery.qtip.min.js"></script>
           <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
           <!-- custom js-->
           <script src="js/main.js"></script>
+          <script src="js/validation.js"></script>
+          <script src="js/touch.js"></script>
         </div>
       </div>
     </footer>
