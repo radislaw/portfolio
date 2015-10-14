@@ -489,6 +489,6 @@ input::-webkit-input-placeholder {
 }
 
 .has-error {
-    border: 1px solid red !important;
-    background: rgba(249, 126, 118, 0.33) !important;
+    border: 1px solid #f97e76 !important;
+    background: #fad6d4 !important;
 }
