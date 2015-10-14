@@ -94,28 +94,41 @@
     line-height: 32px;
 }
 
-.touch-submit {
-    float: left;
+.touch-btn {
     color: #fff;
-    background-color: #48cbe8;
     border-radius: 5px;
-    width: 137px;
     height: 33px;
     border: none;
-    border-bottom: 4px solid #3ba8c0;
     font-size: 19px;
     line-height: 31px;
 }
 
+.touch-btn:active {
+    border: none;
+    border-bottom: 1px solid #3ba8c0;
+    border-top: 1px solid #3ba8c0;
+    font-size: 18px;
+}
+
+.touch-btn:focus {
+    outline: none;
+}
+
+.touch-submit {
+    float: left;
+    background-color: #48cbe8;
+    width: 137px;
+    border-bottom: 4px solid #3ba8c0;
+}
+
 .touch-reset {
     float: right;
-    color: #fff;
     background-color: #849db5;
-    border-radius: 5px;
     width: 125px;
-    height: 33px;
-    border: none;
     border-bottom: 4px solid #687b8f;
-    font-size: 19px;
-    line-height: 31px;
+}
+
+.touch-reset:active {
+    border-bottom: 1px solid #687b8f;
+    border-top: 1px solid #687b8f;
 }
